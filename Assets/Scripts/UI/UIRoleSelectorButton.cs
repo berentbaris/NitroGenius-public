@@ -15,6 +15,7 @@ public class UIRoleSelectorButton : MonoBehaviour
     private Color originalColour;
     private float fadetime = 0.2f;
     public Sound SectorSelectSound;
+    public BoolVariable aiEnabledBool;
 
     private void Awake()
     {
@@ -29,9 +30,10 @@ public class UIRoleSelectorButton : MonoBehaviour
 
     public void OnSelect()
     {
+        selectedSector.controllerAgent = Controller.Player;
         SelectionChange(selectedSector);
         icon.DOColor(Color.white, fadetime);
-        this.transform.DOScale(new Vector3(1.2f, 1.2f, 1), 0.4f).SetEase(Ease.OutElastic);
+        this.transform.DOScale(new Vector3(1.2f, 1.2f, 1), fadetime).SetEase(Ease.OutElastic);
         SectorSelectSound.PlaySound();
     }
 
@@ -40,7 +42,16 @@ public class UIRoleSelectorButton : MonoBehaviour
         if (sector != selectedSector)
         {
             icon.DOColor(originalColour, fadetime);
-            this.transform.DOScale(new Vector3(1f, 1f, 1), 0.4f).SetEase(Ease.OutElastic);
+            this.transform.DOScale(new Vector3(1f, 1f, 1), fadetime).SetEase(Ease.OutElastic);
+
+            if (aiEnabledBool.Value == true)
+            {
+                selectedSector.controllerAgent = Controller.AI;
+            }
+            else
+            {
+                selectedSector.controllerAgent = Controller.None;
+            }
         }
     }
 }

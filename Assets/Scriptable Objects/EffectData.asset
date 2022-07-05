@@ -8855,9 +8855,9 @@ MonoBehaviour:
     _Game_Object: NH3_Agr_N2000
     _ObjectID: 0
     _Object: 5
-    _Value: 0.4
-    _Operator: 2
-    _Extent: 3
+    _Value: -0.04696889
+    _Operator: 1
+    _Extent: 2
   - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
     sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
     activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
@@ -8985,6 +8985,435 @@ MonoBehaviour:
     _Game_Object: Government
     _ObjectID: 3
     _Object: 4
-    _Value: -5
+    _Value: -2
     _Operator: 1
     _Extent: 2
+  - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+    sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+    activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+    actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+    depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+    _ID: 4020
+    _Property: Emission_NH3
+    _Game_Object: Government
+    _ObjectID: 30
+    _Object: 4
+    _Value: -8000
+    _Operator: 1
+    _Extent: 2
+  - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+    sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+    activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+    actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+    depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+    _ID: 4021
+    _Property: Emission_NH3
+    _Game_Object: Government
+    _ObjectID: 31
+    _Object: 4
+    _Value: -8000
+    _Operator: 1
+    _Extent: 2
+  - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+    sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+    activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+    actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+    depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+    _ID: 4022
+    _Property: Emission_NH3
+    _Game_Object: Government
+    _ObjectID: 51
+    _Object: 4
+    _Value: 0.061941948
+    _Operator: 2
+    _Extent: 3
+  - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+    sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+    activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+    actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+    depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+    _ID: 4023
+    _Property: Emission_NH3
+    _Game_Object: Government
+    _ObjectID: 61
+    _Object: 4
+    _Value: 0.061941948
+    _Operator: 1
+    _Extent: 3
+  - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+    sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+    activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+    actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+    depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+    _ID: 4024
+    _Property: Emission_NH3
+    _Game_Object: Government
+    _ObjectID: 11
+    _Object: 4
+    _Value: 0.061941948
+    _Operator: 1
+    _Extent: 3
+  - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+    sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+    activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+    actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+    depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+    _ID: 4025
+    _Property: Emission_NH3
+    _Game_Object: Government
+    _ObjectID: 18
+    _Object: 4
+    _Value: 0.061941948
+    _Operator: 1
+    _Extent: 3
+  - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+    sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+    activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+    actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+    depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+    _ID: 4026
+    _Property: Emission_NH3
+    _Game_Object: Government
+    _ObjectID: 56
+    _Object: 4
+    _Value: 0.061941948
+    _Operator: 1
+    _Extent: 3
+  - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+    sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+    activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+    actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+    depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+    _ID: 4027
+    _Property: Emission_NH3
+    _Game_Object: Government
+    _ObjectID: 56
+    _Object: 4
+    _Value: 0.04955356
+    _Operator: 1
+    _Extent: 3
+  - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+    sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+    activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+    actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+    depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+    _ID: 4028
+    _Property: Emission_NH3
+    _Game_Object: Government
+    _ObjectID: 11
+    _Object: 4
+    _Value: 0.04955356
+    _Operator: 1
+    _Extent: 3
+  - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+    sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+    activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+    actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+    depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+    _ID: 4029
+    _Property: Emission_NH3
+    _Game_Object: Government
+    _ObjectID: 51
+    _Object: 4
+    _Value: 0.04955356
+    _Operator: 1
+    _Extent: 3
+  - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+    sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+    activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+    actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+    depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+    _ID: 4030
+    _Property: Emission_NH3
+    _Game_Object: Government
+    _ObjectID: 61
+    _Object: 4
+    _Value: 0.04955356
+    _Operator: 1
+    _Extent: 3
+  - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+    sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+    activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+    actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+    depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+    _ID: 4031
+    _Property: Emission_NH3
+    _Game_Object: Government
+    _ObjectID: 18
+    _Object: 4
+    _Value: 0.04955356
+    _Operator: 1
+    _Extent: 3
+  - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+    sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+    activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+    actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+    depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+    _ID: 4032
+    _Property: Budget
+    _Game_Object: Government
+    _ObjectID: 1
+    _Object: 1
+    _Value: 500
+    _Operator: 1
+    _Extent: 2
+  - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+    sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+    activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+    actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+    depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+    _ID: 4033
+    _Property: ProductVolume
+    _Game_Object: Government
+    _ObjectID: 30
+    _Object: 3
+    _Value: 0.03856985
+    _Operator: 2
+    _Extent: 3
+  - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+    sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+    activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+    actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+    depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+    _ID: 4034
+    _Property: ProductVolume
+    _Game_Object: Government
+    _ObjectID: 31
+    _Object: 3
+    _Value: 0.03856985
+    _Operator: 2
+    _Extent: 3
+  - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+    sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+    activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+    actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+    depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+    _ID: 4035
+    _Property: ProductVolume
+    _Game_Object: Government
+    _ObjectID: 31
+    _Object: 3
+    _Value: 0.028318336
+    _Operator: 2
+    _Extent: 3
+  - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+    sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+    activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+    actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+    depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+    _ID: 4036
+    _Property: ProductVolume
+    _Game_Object: Government
+    _ObjectID: 30
+    _Object: 3
+    _Value: 0.028318336
+    _Operator: 2
+    _Extent: 3
+  - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+    sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+    activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+    actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+    depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+    _ID: 4037
+    _Property: ProductVolume
+    _Game_Object: Government
+    _ObjectID: 28
+    _Object: 3
+    _Value: 0.028318336
+    _Operator: 2
+    _Extent: 3
+  - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+    sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+    activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+    actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+    depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+    _ID: 4038
+    _Property: ProductVolume
+    _Game_Object: Government
+    _ObjectID: 29
+    _Object: 3
+    _Value: 0.028318336
+    _Operator: 2
+    _Extent: 3
+  - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+    sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+    activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+    actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+    depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+    _ID: 4039
+    _Property: ProductVolume
+    _Game_Object: Government
+    _ObjectID: 32
+    _Object: 3
+    _Value: 0.028318336
+    _Operator: 2
+    _Extent: 3
+  - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+    sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+    activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+    actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+    depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+    _ID: 4040
+    _Property: Emission_NH3
+    _Game_Object: Government
+    _ObjectID: 30
+    _Object: 3
+    _Value: 0.012720221
+    _Operator: 2
+    _Extent: 3
+  - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+    sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+    activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+    actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+    depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+    _ID: 4041
+    _Property: Emission_NH3
+    _Game_Object: Government
+    _ObjectID: 31
+    _Object: 4
+    _Value: 0.012720221
+    _Operator: 2
+    _Extent: 3
+  - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+    sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+    activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+    actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+    depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+    _ID: 4041
+    _Property: Emission_NH3
+    _Game_Object: Government
+    _ObjectID: 31
+    _Object: 4
+    _Value: 0.012720221
+    _Operator: 2
+    _Extent: 3
+  - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+    sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+    activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+    actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+    depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+    _ID: 4042
+    _Property: Emission_NH3
+    _Game_Object: Government
+    _ObjectID: 51
+    _Object: 4
+    _Value: 0.003893494
+    _Operator: 2
+    _Extent: 3
+  - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+    sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+    activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+    actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+    depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+    _ID: 4043
+    _Property: Emission_NH3
+    _Game_Object: Government
+    _ObjectID: 61
+    _Object: 4
+    _Value: 0.003893494
+    _Operator: 2
+    _Extent: 3
+  - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+    sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+    activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+    actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+    depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+    _ID: 4044
+    _Property: Emission_NH3
+    _Game_Object: Government
+    _ObjectID: 18
+    _Object: 4
+    _Value: 0.003893494
+    _Operator: 2
+    _Extent: 3
+  - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+    sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+    activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+    actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+    depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+    _ID: 4045
+    _Property: Emission_NH3
+    _Game_Object: Government
+    _ObjectID: 11
+    _Object: 4
+    _Value: 0.003893494
+    _Operator: 2
+    _Extent: 3
+  - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+    sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+    activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+    actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+    depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+    _ID: 4046
+    _Property: Emission_NH3
+    _Game_Object: Government
+    _ObjectID: 56
+    _Object: 4
+    _Value: 0.003893494
+    _Operator: 2
+    _Extent: 3
+  - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+    sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+    activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+    actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+    depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+    _ID: 4047
+    _Property: Emission_NH3
+    _Game_Object: Government
+    _ObjectID: 56
+    _Object: 4
+    _Value: 0.07521522
+    _Operator: 2
+    _Extent: 3
+  - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+    sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+    activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+    actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+    depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+    _ID: 4048
+    _Property: Emission_NH3
+    _Game_Object: Government
+    _ObjectID: 18
+    _Object: 4
+    _Value: 0.07521522
+    _Operator: 2
+    _Extent: 3
+  - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+    sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+    activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+    actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+    depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+    _ID: 4049
+    _Property: Emission_NH3
+    _Game_Object: Government
+    _ObjectID: 11
+    _Object: 4
+    _Value: 0.07521522
+    _Operator: 2
+    _Extent: 3
+  - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+    sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+    activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+    actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+    depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+    _ID: 4050
+    _Property: Emission_NH3
+    _Game_Object: Government
+    _ObjectID: 51
+    _Object: 4
+    _Value: 0.07521522
+    _Operator: 2
+    _Extent: 3
+  - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+    sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+    activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+    actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+    depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+    _ID: 4051
+    _Property: Emission_NH3
+    _Game_Object: Government
+    _ObjectID: 61
+    _Object: 4
+    _Value: 0.07521522
+    _Operator: 2
+    _Extent: 3

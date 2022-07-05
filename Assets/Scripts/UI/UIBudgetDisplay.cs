@@ -14,22 +14,16 @@ public class UIBudgetDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
     private void Awake()
     {
-        Role_selection_script.StartGame += GetSelectedSector;
+        TurnController.DisplayActionSelectionScreen += DisplayBudget;
         UIChoice.ChoiceSelected += OnBudgetChange;
         UIChoice.ChoiceUnselected += OnBudgetChange;
     }
 
     private void OnDestroy()
     {
-        Role_selection_script.StartGame -= GetSelectedSector;
+        TurnController.DisplayActionSelectionScreen -= DisplayBudget;
         UIChoice.ChoiceSelected -= OnBudgetChange;
         UIChoice.ChoiceUnselected -= OnBudgetChange;
-    }
-
-    public void GetSelectedSector(Sector sector)
-    {
-        selectedSector = sector;
-        DisplayBudget();
     }
 
     public void OnBudgetChange(Action action)
@@ -37,13 +31,9 @@ public class UIBudgetDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExit
         StartCoroutine(CounterDisplayBudget());
     }
 
-    public void OnNewTurnStart()
+    private void DisplayBudget(Sector sector)
     {
-        DisplayBudget();
-    }
-
-    private void DisplayBudget()
-    {
+        selectedSector = sector;
         localBudget = Mathf.RoundToInt(selectedSector.Budget);
         BudgetDisplayText.text = localBudget.ToString();
     }
@@ -65,7 +55,7 @@ public class UIBudgetDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        TooltipSystem.Show("Your yearly budget for this year", "Budget");
+        TooltipSystem.Show("Your budget for this year", "Budget");
     }
 
     public void OnPointerExit(PointerEventData eventData)

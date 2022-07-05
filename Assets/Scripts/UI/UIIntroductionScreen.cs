@@ -6,13 +6,13 @@ using TMPro;
 
 public class UIIntroductionScreen : MonoBehaviour
 {
-    public BoolVariable skipTutorial;
+    public BoolVariable TutorialEnabled;
     public CanvasGroup IntroCanGroup;
-    public CanvasGroup RoleSelectioncanGroup;
+    public Role_selection_script roleSelection;
 
     public void OnIntroductionScreenActivate()
     {
-        if (skipTutorial.Value == false)
+        if (TutorialEnabled.Value == true)
         {
             IntroCanGroup.alpha = 1;
             IntroCanGroup.interactable = true;
@@ -20,9 +20,7 @@ public class UIIntroductionScreen : MonoBehaviour
         }
         else
         {
-            RoleSelectioncanGroup.alpha = 1;
-            RoleSelectioncanGroup.interactable = true;
-            RoleSelectioncanGroup.blocksRaycasts = true;
+            roleSelection.ActivateRoleSelectionScreen();
         }
     }
 }

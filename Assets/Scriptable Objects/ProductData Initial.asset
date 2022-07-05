@@ -33,7 +33,7 @@ MonoBehaviour:
     _Name: Art-Fertiliser
     _Unit: Meuro/kton
     _Emission_N2O: 0
-    _Emission_NH3: 70
+    _Emission_NH3: 12.859614
     _Emission_NO3: 0
     _Emission_NOx: 0
     _Price_Per_Unit: 0.76
@@ -97,7 +97,7 @@ MonoBehaviour:
     _Name: Chick
     _Unit: MEuro/mln-chick
     _Emission_N2O: 0
-    _Emission_NH3: 0
+    _Emission_NH3: 5.8679523
     _Emission_NO3: 0
     _Emission_NOx: 2.7827
     _Price_Per_Unit: 1.2
@@ -153,7 +153,7 @@ MonoBehaviour:
     _Name: Egg
     _Unit: MEuro/mln-kg
     _Emission_N2O: 0
-    _Emission_NH3: 0
+    _Emission_NH3: 5.8679523
     _Emission_NO3: 0
     _Emission_NOx: 0.4638
     _Price_Per_Unit: 0.2
@@ -233,7 +233,7 @@ MonoBehaviour:
     _Name: Krachtvoer
     _Unit: MEuro/kton
     _Emission_N2O: 0
-    _Emission_NH3: 1.7116239
+    _Emission_NH3: 0
     _Emission_NO3: 0
     _Emission_NOx: 0
     _Price_Per_Unit: 0.0017
@@ -249,7 +249,7 @@ MonoBehaviour:
     _Name: Manure 1
     _Unit: Euro/ton
     _Emission_N2O: 0
-    _Emission_NH3: 210
+    _Emission_NH3: 90404.586
     _Emission_NO3: 0
     _Emission_NOx: 0
     _Price_Per_Unit: 0
@@ -257,7 +257,7 @@ MonoBehaviour:
     _Name: Manure 2
     _Unit: Euro/ton
     _Emission_N2O: 0
-    _Emission_NH3: 210
+    _Emission_NH3: 90404.586
     _Emission_NO3: 0
     _Emission_NOx: 0
     _Price_Per_Unit: 0
@@ -417,7 +417,7 @@ MonoBehaviour:
     _Name: Milk
     _Unit: Euro/mln-l
     _Emission_N2O: 0
-    _Emission_NH3: 0
+    _Emission_NH3: 3.2429848
     _Emission_NO3: 0
     _Emission_NOx: 0.9276
     _Price_Per_Unit: 0.4
@@ -457,7 +457,7 @@ MonoBehaviour:
     _Name: Pork
     _Unit: MEuro/mln-pig
     _Emission_N2O: 0
-    _Emission_NH3: 0
+    _Emission_NH3: 7.5949736
     _Emission_NO3: 0
     _Emission_NOx: 2.4349
     _Price_Per_Unit: 1.05
@@ -497,7 +497,7 @@ MonoBehaviour:
     _Name: Veal
     _Unit: MEuro/mln-cow
     _Emission_N2O: 0
-    _Emission_NH3: 0
+    _Emission_NH3: 3.2429848
     _Emission_NO3: 0
     _Emission_NOx: 3.2465
     _Price_Per_Unit: 1.4

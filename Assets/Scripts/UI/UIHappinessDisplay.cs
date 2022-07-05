@@ -14,23 +14,17 @@ public class UIHappinessDisplay : MonoBehaviour
     private void Awake()
     {
         fillImageWidth = barFillImage.rectTransform.sizeDelta.x;
-        Role_selection_script.StartGame += OnGameStart;
+        TurnController.DisplayActionSelectionScreen += DisplayHappiness;
     }
 
     private void OnDestroy()
     {
-        Role_selection_script.StartGame -= OnGameStart;
+        TurnController.DisplayActionSelectionScreen -= DisplayHappiness;
     }
 
-    private void OnGameStart(Sector sector)
-    {
-        DisplayPercentage();
-    }
-
-    public void DisplayPercentage()
+    private void DisplayHappiness(Sector sector)
     {
         percentageDisplay.text = Mathf.RoundToInt(natData._NationalItem._Happiness).ToString();
-
         barFillImage.rectTransform.sizeDelta = new Vector2(natData._NationalItem._Happiness / 100 * fillImageWidth, barFillImage.rectTransform.sizeDelta.y);
     }
 }

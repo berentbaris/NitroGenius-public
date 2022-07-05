@@ -7,40 +7,23 @@ using UnityEngine.EventSystems;
 
 public class UIScoreDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    private Sector selectedSector;
-    public SectorList sectorList;
-    public NationalData natData;
     public TextMeshProUGUI scoreText;
+
     private void Awake()
     {
-        Role_selection_script.StartGame += OnStartGame;
+        TurnController.DisplayActionSelectionScreen += Display_Score;
     }
 
     private void OnDestroy()
     {
-        Role_selection_script.StartGame -= OnStartGame;
+        TurnController.DisplayActionSelectionScreen -= Display_Score;
     }
 
-    private void OnStartGame(Sector sector)
+    public void Display_Score(Sector sector)
     {
-        selectedSector = sector;
-        Display_Score();
+        scoreText.text = Mathf.RoundToInt(sector.score).ToString();
     }
-    public void Display_Score()
-    {
-        if (selectedSector != sectorList.list[3] && selectedSector != sectorList.list[2])
-        {
-            scoreText.text = Mathf.RoundToInt(natData._NationalItem._Score).ToString();
-        }
-        if (selectedSector == sectorList.list[3])
-        {
-            scoreText.text = Mathf.RoundToInt(natData._NationalItem._Score).ToString();
-        }
-        if (selectedSector == sectorList.list[2])
-        {		    
-            scoreText.text = Mathf.RoundToInt(natData._NationalItem._Score).ToString();        
-        }
-    }
+
     public void OnPointerEnter(PointerEventData eventData)
     {
         TooltipSystem.Show("Your score", "Score");

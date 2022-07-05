@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,7 +8,7 @@ using UnityEngine.UI;
 
 public class TurnController : MonoBehaviour
 {
-    public UnityEvent checkeventEvent;
+    public SimpleScriptableEvent checkeventEvent;
     public IntVariable turn;
     public IntVariable currentYear;
     public FloatVariable turn_timer;
@@ -15,7 +16,6 @@ public class TurnController : MonoBehaviour
     public List<float> turnTimerList = new List<float>();
     public UnityEvent turnEndEvent;
     private Coroutine timerCoroutine;
-    private CanvasGroup canvasGroup;
 	public SectorList sectorList;
     public SourceList sourceList;
     public ActivityData ActivityData;
@@ -23,24 +23,25 @@ public class TurnController : MonoBehaviour
     public ActionData ActionData;
     public DepositionData DepositionData;
     public AIController aiController;
+    public static event Action<Sector> DisplayActionSelectionScreen;
+    public List<Sector> playerSectors = new List<Sector>();
+    private int currentPlayer = 0;
 
-    private void Awake()
+    public void OnStartGame()
     {
-        canvasGroup = GetComponent<CanvasGroup>();
-        Role_selection_script.StartGame += OnStartGame;
-    }
-
-    private void OnDestroy()
-    {
-        Role_selection_script.StartGame -= OnStartGame;
-    }
-
-    private void OnStartGame(Sector sector)
-    {
-        canvasGroup.alpha = 1;
-        canvasGroup.interactable = true;
-        canvasGroup.blocksRaycasts = true;
         timerCoroutine = StartCoroutine(TurnTimer());
+
+        foreach (Sector sector in sectorList.list)
+        {
+            sector.SelectedChoices.Clear();
+            sector.Action_Limit_Per_Turn = 3;
+            if (sector.controllerAgent == Controller.Player)
+            {
+                playerSectors.Add(sector);
+            }
+        }
+        aiController.MakeAiDecisions();
+        DisplayActionSelectionScreen(playerSectors[currentPlayer]);
     }
 
     public void StartTurn()
@@ -49,6 +50,19 @@ public class TurnController : MonoBehaviour
         currentYear.SetValue(currentYear.Value + 1);
         timerCoroutine = StartCoroutine(TurnTimer());
         ActionData.OnTurnChange(turn.Value);
+
+        foreach (Sector eachsector in sectorList.list)
+        {
+            eachsector.SelectedChoices.Clear();
+            eachsector.Action_Limit_Per_Turn = 3;
+        }
+
+        DepositionData.LocalizeEmissions();
+        DepositionData.CalculateDeposition();
+        NationalData.CalculateN2000Percentage();
+
+        DisplayActionSelectionScreen(playerSectors[0]);
+
         aiController.MakeAiDecisions();
 
         NationalData.RecordPreviousTurnValues();
@@ -57,8 +71,6 @@ public class TurnController : MonoBehaviour
         {
             sector.RecordPreviousTurnValues();
         }
-
-        NationalData.CalculateN2000Percentage();
     }
 
     private IEnumerator TurnTimer()
@@ -70,10 +82,10 @@ public class TurnController : MonoBehaviour
             remainingTime.SetValue(remainingTime.Value - Time.deltaTime);
             yield return null;
         }
-        OnTimerEnd();
+        OnActionsComplete();
     }
 
-    private void OnTimerEnd()
+    private void OnTurnEnd()
     {
         foreach (Sector sector in sectorList.list)
         {
@@ -84,7 +96,7 @@ public class TurnController : MonoBehaviour
             sector.N2O_Emissions = 0;
             sector.Product_Volume_Total = 0;
             sector.Fertilizer_Input = 0;
-            sector.Fertilizer_NH3_Total = 0;
+            sector.Fertilizer_Output = 0;
             sector.NUE = 0;
         }
         foreach (Source source in sourceList.list)
@@ -106,14 +118,6 @@ public class TurnController : MonoBehaviour
                 }
             }
         }
-        checkeventEvent.Invoke();
-        foreach (Action action in sectorList.list[4].SelectedChoices)
-        {
-            foreach (Effect effect in action._Effects)
-            {
-                effect.ApplyEffect();
-            }
-        }
         foreach (Activity activity in ActivityData._ActivityItems)
         {
             activity.Calculate();
@@ -129,13 +133,6 @@ public class TurnController : MonoBehaviour
                 }
             }
         }
-        foreach (Action action in sectorList.list[4].SelectedChoices)
-        {
-            foreach (Effect effect in action._Effects)
-            {
-                effect.ApplyEffectAfter();
-            }
-        }
         ActivityData.CalculateSectorEmissions();
         ActivityData.CalculateSourceEmissions();
         DepositionData.LocalizeEmissions();
@@ -143,7 +140,8 @@ public class TurnController : MonoBehaviour
         NationalData.CalculateNationalDeposition();
         NationalData.CalculateN2000Percentage();
         NationalData.CalculateHappiness();
-        NationalData.CalculateScore();
+        NationalData.CalculateSectorScore();
+        checkeventEvent.Raise();
         turnEndEvent.Invoke();
 
         foreach (Sector sector in sectorList.list)
@@ -166,6 +164,21 @@ public class TurnController : MonoBehaviour
     public void OnSubmitButtonPress()
     {
         StopCoroutine(timerCoroutine);
-        OnTimerEnd();
+        OnActionsComplete();
+    }
+
+    public void OnActionsComplete()
+    {
+        currentPlayer++;
+        if (playerSectors.Count == currentPlayer)
+        {
+            OnTurnEnd();
+            currentPlayer = 0;
+            DisplayActionSelectionScreen(playerSectors[currentPlayer]);
+        }
+        else
+        {
+            DisplayActionSelectionScreen(playerSectors[currentPlayer]);
+        }
     }
 }

@@ -26,6 +26,7 @@ public class UIChoice : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     private float fadeDuration = 0.3f;
     public Sound ChoiceSelectedSound;
     public Sound ChoiceUnselectedSound;
+    public bool FullListChoice;
 
     private void Awake()
     {
@@ -68,6 +69,15 @@ public class UIChoice : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     private void RefreshDisplay()
     {   
+        if (FullListChoice == true)
+        {
+            toggle.interactable = false;
+            nameText.DOColor(Color.white, fadeDuration);
+            costText.DOColor(Color.white, fadeDuration);
+            circleImage.DOColor(Color.white, fadeDuration);
+            return;
+        }
+
         if (toggle.isOn)
         {
             return;
@@ -109,22 +119,25 @@ public class UIChoice : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     public void OnToggleClick()
     {
-        if (toggle.isOn)
+        if (FullListChoice == false)
         {
-            BgImage.DOColor(greenColor, fadeDuration);
-            belongingChoice._Belonging_Sector.ChoiceSelected(belongingChoice);
-            ChoiceSelected(belongingChoice);
-            ChoiceSelectedSound.PlaySound();
-            return;
-        }
+            if (toggle.isOn)
+            {
+                BgImage.DOColor(greenColor, fadeDuration);
+                belongingChoice._Belonging_Sector.ChoiceSelected(belongingChoice);
+                ChoiceSelected(belongingChoice);
+                ChoiceSelectedSound.PlaySound();
+                return;
+            }
 
-        else if (toggle.isOn == false)
-        {
-            BgImage.DOColor(originalColor, fadeDuration);
-            belongingChoice._Belonging_Sector.ChoiceUnselected(belongingChoice);
-            ChoiceUnselected(belongingChoice);
-            ChoiceUnselectedSound.PlaySound();
-            return;
+            else if (toggle.isOn == false)
+            {
+                BgImage.DOColor(originalColor, fadeDuration);
+                belongingChoice._Belonging_Sector.ChoiceUnselected(belongingChoice);
+                ChoiceUnselected(belongingChoice);
+                ChoiceUnselectedSound.PlaySound();
+                return;
+            }
         }
     }
 }

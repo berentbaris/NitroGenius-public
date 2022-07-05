@@ -228,7 +228,7 @@ MonoBehaviour:
     _N2O: ----
     _Image: 
     _Budget: 
-    _Effect_IDs: 990300009b0300009e030000980300009a0300009d030000f0000000f1000000f20000007b0400007c0400007d040000a40f0000a30f0000
+    _Effect_IDs: 990300009b0300009e030000980300009a0300009d030000f0000000f1000000f20000007b0400007c0400007d040000a40f0000b40f0000b50f0000
     _Effects:
     - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
       sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
@@ -404,14 +404,27 @@ MonoBehaviour:
       activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
       actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
       depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 4003
+      _ID: 4020
       _Property: Emission_NH3
-      _Game_Object: Manure_1
+      _Game_Object: Government
       _ObjectID: 30
       _Object: 4
-      _Value: 0.33
-      _Operator: 2
-      _Extent: 3
+      _Value: -8000
+      _Operator: 1
+      _Extent: 2
+    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+      _ID: 4021
+      _Property: Emission_NH3
+      _Game_Object: Government
+      _ObjectID: 31
+      _Object: 4
+      _Value: -8000
+      _Operator: 1
+      _Extent: 2
     _Image_Ref: fertilizer
     _Image_Sprite: {fileID: 21300000, guid: e72cb7782b3469e429caad4d5f208eba, type: 3}
   - _Cooldown: 3
@@ -424,13 +437,13 @@ MonoBehaviour:
     _Importance: 0
     _Description: Better floor design, cleaning and drainage can reduce stable emissions.
     _Repetivity: Rotating
-    _Cost: 3000
+    _Cost: 2800
     _NH3: ---
     _Nox: 
     _N2O: +
     _Image: 
     _Budget: 
-    _Effect_IDs: a5030000a6030000a7030000f9000000fa000000fb000000fc000000fd000000fe000000
+    _Effect_IDs: a5030000a6030000a7030000f9000000fa000000fb000000fc000000fd000000fe000000b60f0000b70f0000b80f0000b90f0000ba0f0000
     _Effects:
     - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
       sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
@@ -549,6 +562,71 @@ MonoBehaviour:
       _Value: 0.1
       _Operator: 2
       _Extent: 4
+    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+      _ID: 4022
+      _Property: Emission_NH3
+      _Game_Object: Government
+      _ObjectID: 51
+      _Object: 4
+      _Value: 0.061941948
+      _Operator: 2
+      _Extent: 3
+    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+      _ID: 4023
+      _Property: Emission_NH3
+      _Game_Object: Government
+      _ObjectID: 61
+      _Object: 4
+      _Value: 0.061941948
+      _Operator: 1
+      _Extent: 3
+    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+      _ID: 4024
+      _Property: Emission_NH3
+      _Game_Object: Government
+      _ObjectID: 11
+      _Object: 4
+      _Value: 0.061941948
+      _Operator: 1
+      _Extent: 3
+    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+      _ID: 4025
+      _Property: Emission_NH3
+      _Game_Object: Government
+      _ObjectID: 18
+      _Object: 4
+      _Value: 0.061941948
+      _Operator: 1
+      _Extent: 3
+    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+      _ID: 4026
+      _Property: Emission_NH3
+      _Game_Object: Government
+      _ObjectID: 56
+      _Object: 4
+      _Value: 0.061941948
+      _Operator: 1
+      _Extent: 3
     _Image_Ref: stables
     _Image_Sprite: {fileID: 21300000, guid: dc98a320ec3a22c4f835f15e409d520d, type: 3}
   - _Cooldown: 3
@@ -567,7 +645,7 @@ MonoBehaviour:
     _N2O: +
     _Image: 
     _Budget: 
-    _Effect_IDs: a2030000a3030000a4030000050100000601000007010000
+    _Effect_IDs: a2030000a3030000a4030000050100000601000007010000b40f0000b50f0000
     _Effects:
     - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
       sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
@@ -647,6 +725,32 @@ MonoBehaviour:
       _Value: 0.02
       _Operator: 1
       _Extent: 1
+    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+      _ID: 4020
+      _Property: Emission_NH3
+      _Game_Object: Government
+      _ObjectID: 30
+      _Object: 4
+      _Value: -8000
+      _Operator: 1
+      _Extent: 2
+    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+      _ID: 4021
+      _Property: Emission_NH3
+      _Game_Object: Government
+      _ObjectID: 31
+      _Object: 4
+      _Value: -8000
+      _Operator: 1
+      _Extent: 2
     _Image_Ref: manure-storage
     _Image_Sprite: {fileID: 21300000, guid: d8543ab4979a6b7469c9df6e74552c73, type: 3}
   - _Cooldown: 3
@@ -781,7 +885,7 @@ MonoBehaviour:
       _Game_Object: Government
       _ObjectID: 3
       _Object: 4
-      _Value: -5
+      _Value: -2
       _Operator: 1
       _Extent: 2
     _Image_Ref: fertilizer
@@ -853,7 +957,7 @@ MonoBehaviour:
       _Game_Object: Government
       _ObjectID: 3
       _Object: 4
-      _Value: -5
+      _Value: -2
       _Operator: 1
       _Extent: 2
     _Image_Ref: fertilizer
@@ -988,19 +1092,6 @@ MonoBehaviour:
       _Value: 4
       _Operator: 1
       _Extent: 2
-    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
-      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
-      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
-      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
-      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 983
-      _Property: ProductVolume
-      _Game_Object: Dairy_Farms
-      _ObjectID: 28
-      _Object: 3
-      _Value: 1.03
-      _Operator: 2
-      _Extent: 2
     _Image_Ref: water
     _Image_Sprite: {fileID: 21300000, guid: a371570dc03ff4241a066c80d8a33415, type: 3}
   - _Cooldown: 3
@@ -1014,13 +1105,13 @@ MonoBehaviour:
     _Description: Let cattle graze more frequently. Decrease in ammonia emissions
       per hour of grazing is determined to be 2.61%.
     _Repetivity: Rotating
-    _Cost: 2100
+    _Cost: 30
     _NH3: '-'
     _Nox: 
     _N2O: +
     _Image: --
     _Budget: 
-    _Effect_IDs: 24010000250100002601000027010000
+    _Effect_IDs: 240100002501000026010000ca0f0000cb0f0000cc0f0000cd0f0000ce0f0000
     _Effects:
     - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
       sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
@@ -1066,12 +1157,64 @@ MonoBehaviour:
       activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
       actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
       depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 295
-      _Property: NH3_Emissions
-      _Game_Object: Veal
-      _ObjectID: 29
-      _Object: 3
-      _Value: 0.09
+      _ID: 4042
+      _Property: Emission_NH3
+      _Game_Object: Government
+      _ObjectID: 51
+      _Object: 4
+      _Value: 0.003893494
+      _Operator: 2
+      _Extent: 3
+    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+      _ID: 4043
+      _Property: Emission_NH3
+      _Game_Object: Government
+      _ObjectID: 61
+      _Object: 4
+      _Value: 0.003893494
+      _Operator: 2
+      _Extent: 3
+    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+      _ID: 4044
+      _Property: Emission_NH3
+      _Game_Object: Government
+      _ObjectID: 18
+      _Object: 4
+      _Value: 0.003893494
+      _Operator: 2
+      _Extent: 3
+    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+      _ID: 4045
+      _Property: Emission_NH3
+      _Game_Object: Government
+      _ObjectID: 11
+      _Object: 4
+      _Value: 0.003893494
+      _Operator: 2
+      _Extent: 3
+    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+      _ID: 4046
+      _Property: Emission_NH3
+      _Game_Object: Government
+      _ObjectID: 56
+      _Object: 4
+      _Value: 0.003893494
       _Operator: 2
       _Extent: 3
     _Image_Ref: livestock-intensity
@@ -1087,13 +1230,13 @@ MonoBehaviour:
     _Description: Use an improved fodder with a lower nitrogen content. (Use of the
       improved fodder does not reduce animal production.)
     _Repetivity: ExecOnce
-    _Cost: 500
+    _Cost: 720.5
     _NH3: '-'
     _Nox: 
     _N2O: '-'
     _Image: 
     _Budget: 
-    _Effect_IDs: 2b0100002c0100002d010000ab03000029010000a8030000a9030000aa030000e9030000a50f0000
+    _Effect_IDs: 2b0100002c0100002d010000ab030000cf0f0000d00f0000d10f0000d20f0000d30f0000
     _Effects:
     - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
       sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
@@ -1152,77 +1295,64 @@ MonoBehaviour:
       activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
       actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
       depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 297
-      _Property: RawMaterialAmountPerUnit
-      _Game_Object: Pig_Farming
-      _ObjectID: 32
-      _Object: 3
-      _Value: 0.9
-      _Operator: 2
-      _Extent: 2
-    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
-      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
-      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
-      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
-      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 936
-      _Property: RawMaterialAmountPerUnit
-      _Game_Object: Chicken_Farms
-      _ObjectID: 30
-      _Object: 3
-      _Value: 0.9
-      _Operator: 2
-      _Extent: 2
-    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
-      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
-      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
-      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
-      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 937
-      _Property: RawMaterialAmountPerUnit
-      _Game_Object: Veal_Farms
-      _ObjectID: 29
-      _Object: 3
-      _Value: 0.9
-      _Operator: 2
-      _Extent: 2
-    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
-      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
-      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
-      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
-      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 938
-      _Property: RawMaterialAmountPerUnit
-      _Game_Object: Chicken_eggs
-      _ObjectID: 31
-      _Object: 3
-      _Value: 0.9
-      _Operator: 2
-      _Extent: 2
-    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
-      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
-      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
-      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
-      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 1001
-      _Property: RawMaterialAmountPerUnit
-      _Game_Object: Dairy_Farms
-      _ObjectID: 28
-      _Object: 3
-      _Value: 0.9
-      _Operator: 2
-      _Extent: 2
-    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
-      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
-      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
-      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
-      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 4005
+      _ID: 4047
       _Property: Emission_NH3
-      _Game_Object: Krachtvoer
+      _Game_Object: Government
+      _ObjectID: 56
+      _Object: 4
+      _Value: 0.07521522
+      _Operator: 2
+      _Extent: 3
+    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+      _ID: 4048
+      _Property: Emission_NH3
+      _Game_Object: Government
+      _ObjectID: 18
+      _Object: 4
+      _Value: 0.07521522
+      _Operator: 2
+      _Extent: 3
+    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+      _ID: 4049
+      _Property: Emission_NH3
+      _Game_Object: Government
+      _ObjectID: 11
+      _Object: 4
+      _Value: 0.07521522
+      _Operator: 2
+      _Extent: 3
+    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+      _ID: 4050
+      _Property: Emission_NH3
+      _Game_Object: Government
       _ObjectID: 51
       _Object: 4
-      _Value: 0.15
+      _Value: 0.07521522
+      _Operator: 2
+      _Extent: 3
+    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+      _ID: 4051
+      _Property: Emission_NH3
+      _Game_Object: Government
+      _ObjectID: 61
+      _Object: 4
+      _Value: 0.07521522
       _Operator: 2
       _Extent: 3
     _Image_Ref: animal-feed
@@ -1598,7 +1728,7 @@ MonoBehaviour:
     _N2O: '-'
     _Image: 
     _Budget: 
-    _Effect_IDs: 3a01000063040000640400006504000066040000670400003b010000e5030000e6030000e7030000e8030000
+    _Effect_IDs: 3a01000063040000640400006504000066040000670400003b010000e5030000e6030000e7030000e8030000c00f0000
     _Effects:
     - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
       sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
@@ -1743,6 +1873,19 @@ MonoBehaviour:
       _Value: 0.95
       _Operator: 2
       _Extent: 2
+    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+      _ID: 4032
+      _Property: Budget
+      _Game_Object: Government
+      _ObjectID: 1
+      _Object: 1
+      _Value: 500
+      _Operator: 1
+      _Extent: 2
     _Image_Ref: fallow
     _Image_Sprite: {fileID: 21300000, guid: f05ffb2adf9dc824a8b720640d2faa76, type: 3}
   - _Cooldown: 3
@@ -1762,7 +1905,7 @@ MonoBehaviour:
     _N2O: --
     _Image: 
     _Budget: 
-    _Effect_IDs: 400100005e0400005f040000600400006104000062040000410100005104000052040000530400005404000055040000560400005704000058040000590400005a040000
+    _Effect_IDs: 400100005e0400005f040000600400006104000062040000410100005104000052040000530400005404000055040000560400005704000058040000590400005a040000c00f0000
     _Effects:
     - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
       sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
@@ -1984,6 +2127,19 @@ MonoBehaviour:
       _Object: 3
       _Value: 0.95
       _Operator: 2
+      _Extent: 2
+    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+      _ID: 4032
+      _Property: Budget
+      _Game_Object: Government
+      _ObjectID: 1
+      _Object: 1
+      _Value: 500
+      _Operator: 1
       _Extent: 2
     _Image_Ref: fallow
     _Image_Sprite: {fileID: 21300000, guid: f05ffb2adf9dc824a8b720640d2faa76, type: 3}
@@ -9593,7 +9749,7 @@ MonoBehaviour:
     _N2O: '-'
     _Image: 
     _Budget: 
-    _Effect_IDs: d9050000da050000db050000d0050000d3050000d4050000d5050000d6050000d7050000
+    _Effect_IDs: d9050000da050000db050000d0050000d3050000d4050000d5050000d6050000d7050000bb0f0000bc0f0000bd0f0000be0f0000bf0f0000
     _Effects:
     - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
       sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
@@ -9712,6 +9868,71 @@ MonoBehaviour:
       _Value: 1.01
       _Operator: 2
       _Extent: 2
+    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+      _ID: 4027
+      _Property: Emission_NH3
+      _Game_Object: Government
+      _ObjectID: 56
+      _Object: 4
+      _Value: 0.04955356
+      _Operator: 1
+      _Extent: 3
+    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+      _ID: 4028
+      _Property: Emission_NH3
+      _Game_Object: Government
+      _ObjectID: 11
+      _Object: 4
+      _Value: 0.04955356
+      _Operator: 1
+      _Extent: 3
+    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+      _ID: 4029
+      _Property: Emission_NH3
+      _Game_Object: Government
+      _ObjectID: 51
+      _Object: 4
+      _Value: 0.04955356
+      _Operator: 1
+      _Extent: 3
+    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+      _ID: 4030
+      _Property: Emission_NH3
+      _Game_Object: Government
+      _ObjectID: 61
+      _Object: 4
+      _Value: 0.04955356
+      _Operator: 1
+      _Extent: 3
+    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+      _ID: 4031
+      _Property: Emission_NH3
+      _Game_Object: Government
+      _ObjectID: 18
+      _Object: 4
+      _Value: 0.04955356
+      _Operator: 1
+      _Extent: 3
     _Image_Ref: stables
     _Image_Sprite: {fileID: 21300000, guid: dc98a320ec3a22c4f835f15e409d520d, type: 3}
   - _Cooldown: 3
@@ -9835,7 +10056,8 @@ MonoBehaviour:
     _Priority: 2022
     _Importance: 0
     _Description: If you need extra money right now you may choose a more sober lifestyle.
-      You can cut some costs! Eat more beans and pasta. Eat out less.
+      You can cut some costs! Eat more beans and pasta. Eat out less. This might
+      affect happiness.
     _Repetivity: Permanent
     _Cost: 0
     _NH3: 
@@ -9882,7 +10104,7 @@ MonoBehaviour:
     _Priority: 2022
     _Importance: 0
     _Description: So your income is higher now? Flaunt it! It is time to live more
-      luxuriously. Spend more money and enjoy life.
+      luxuriously. Spend more money and enjoy life. Be happy!
     _Repetivity: Permanent
     _Cost: 3000
     _NH3: ++
@@ -10174,8 +10396,7 @@ MonoBehaviour:
     _Priority: 2022
     _Importance: 0
     _Description: Emission reduction in the Netherlands alone is not enough. You
-      need international cooperation in order to reduce N deposition levels. 80%
-      of NOx deposition comes from abroad.
+      need international cooperation in order to reduce N deposition levels.
     _Repetivity: Permanent
     _Cost: 1000
     _NH3: 
@@ -11478,10 +11699,8 @@ MonoBehaviour:
     _Priority: 2024
     _Importance: 1
     _Description: Greenpeace NL has filed a lawsuit against the Dutch government!
-      They are arguing that the Dutch government is not on track to protect its natural
-      habitats from nitrogen emissions. They are claiming that the government is
-      neglecting its citizens' well-being by allowing the deterioration of nature
-      and their (living) environments.
+      They are claiming that the government is neglecting its citizens' well-being
+      and heatlhby failing to protect their living space from nitrogen.
     _Repetivity: ExecOnce
     _Cost: 0
     _NH3: 
@@ -11502,9 +11721,9 @@ MonoBehaviour:
     _Priority: 2027
     _Importance: 1
     _Description: Greenpeace NL has won the court case! The Dutch court in The Hague
-      has ruled that the government has to take action to solve the nitrogen crisis
-      (for example, by taxing fertilizer use and buying out pig, poultry, and dairy
-      farms).
+      cited Article 21 and 22 of the Dutch Constitution and ordered the government
+      to meet the 2030 target of bringing 50% of Natura 2000 areas below the critical
+      deposition load levels.
     _Repetivity: ExecOnce
     _Cost: 0
     _NH3: 
@@ -11770,16 +11989,15 @@ MonoBehaviour:
     _Importance: 1
     _Description: Selective acquisition of the largest polluters in the vicinity
       of Natura 2000 areas. A targeted approach has been proven to be 15 to 40 percent
-      more effective in reducing deposition levels. This will greatly reduce the
-      government's budget for this turn.
+      more effective in reducing deposition levels.
     _Repetivity: ExecOnce
-    _Cost: 10000
+    _Cost: 3500
     _NH3: ----
     _Nox: --
     _N2O: 
     _Image: +
     _Budget: 
-    _Effect_IDs: a90f0000ad0f0000ae0f0000af0f0000b00f0000b10f0000b20f0000
+    _Effect_IDs: a90f0000
     _Effects:
     - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
       sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
@@ -11791,85 +12009,7 @@ MonoBehaviour:
       _Game_Object: NH3_Agr_N2000
       _ObjectID: 0
       _Object: 5
-      _Value: 0.3
-      _Operator: 2
-      _Extent: 3
-    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
-      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
-      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
-      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
-      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 4013
-      _Property: ProductVolume
-      _Game_Object: Pig Farming
-      _ObjectID: 28
-      _Object: 3
-      _Value: 0.1
-      _Operator: 2
-      _Extent: 3
-    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
-      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
-      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
-      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
-      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 4014
-      _Property: ProductVolume
-      _Game_Object: Pig Farming
-      _ObjectID: 29
-      _Object: 3
-      _Value: 0.1
-      _Operator: 2
-      _Extent: 3
-    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
-      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
-      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
-      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
-      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 4015
-      _Property: ProductVolume
-      _Game_Object: Pig Farming
-      _ObjectID: 30
-      _Object: 3
-      _Value: 0.1
-      _Operator: 2
-      _Extent: 3
-    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
-      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
-      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
-      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
-      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 4016
-      _Property: ProductVolume
-      _Game_Object: Pig Farming
-      _ObjectID: 31
-      _Object: 3
-      _Value: 0.1
-      _Operator: 2
-      _Extent: 3
-    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
-      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
-      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
-      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
-      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 4017
-      _Property: ProductVolume
-      _Game_Object: Pig Farming
-      _ObjectID: 32
-      _Object: 3
-      _Value: 0.1
-      _Operator: 2
-      _Extent: 3
-    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
-      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
-      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
-      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
-      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 4018
-      _Property: Budget
-      _Game_Object: Government
-      _ObjectID: 3
-      _Object: 1
-      _Value: -1500
+      _Value: -0.04696889
       _Operator: 1
       _Extent: 2
     _Image_Ref: targeted
@@ -11886,25 +12026,25 @@ MonoBehaviour:
       the manure. Ammonia release from diluted manure is 30% less than undiluted
       manure.
     _Repetivity: ExecOnce
-    _Cost: 100
+    _Cost: 1050
     _NH3: --
     _Nox: 
     _N2O: 
     _Image: +
     _Budget: 
-    _Effect_IDs: a30f0000a40f0000
+    _Effect_IDs: c80f0000c90f0000
     _Effects:
     - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
       sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
       activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
       actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
       depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 4003
+      _ID: 4040
       _Property: Emission_NH3
-      _Game_Object: Manure_1
+      _Game_Object: Government
       _ObjectID: 30
-      _Object: 4
-      _Value: 0.33
+      _Object: 3
+      _Value: 0.012720221
       _Operator: 2
       _Extent: 3
     - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
@@ -11912,12 +12052,12 @@ MonoBehaviour:
       activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
       actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
       depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 4004
+      _ID: 4041
       _Property: Emission_NH3
-      _Game_Object: Manure_2
+      _Game_Object: Government
       _ObjectID: 31
       _Object: 4
-      _Value: 0.33
+      _Value: 0.012720221
       _Operator: 2
       _Extent: 3
     _Image_Ref: manure
@@ -11939,19 +12079,71 @@ MonoBehaviour:
     _N2O: 
     _Image: +
     _Budget: 
-    _Effect_IDs: a80f0000
+    _Effect_IDs: c30f0000c40f0000c50f0000c60f0000c70f0000
     _Effects:
     - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
       sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
       activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
       actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
       depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 4008
-      _Property: NH3_Agr_NL
-      _Game_Object: NH3_Agr_NL
-      _ObjectID: 0
-      _Object: 5
-      _Value: 0.1
+      _ID: 4035
+      _Property: ProductVolume
+      _Game_Object: Government
+      _ObjectID: 31
+      _Object: 3
+      _Value: 0.028318336
+      _Operator: 2
+      _Extent: 3
+    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+      _ID: 4036
+      _Property: ProductVolume
+      _Game_Object: Government
+      _ObjectID: 30
+      _Object: 3
+      _Value: 0.028318336
+      _Operator: 2
+      _Extent: 3
+    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+      _ID: 4037
+      _Property: ProductVolume
+      _Game_Object: Government
+      _ObjectID: 28
+      _Object: 3
+      _Value: 0.028318336
+      _Operator: 2
+      _Extent: 3
+    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+      _ID: 4038
+      _Property: ProductVolume
+      _Game_Object: Government
+      _ObjectID: 29
+      _Object: 3
+      _Value: 0.028318336
+      _Operator: 2
+      _Extent: 3
+    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+      _ID: 4039
+      _Property: ProductVolume
+      _Game_Object: Government
+      _ObjectID: 32
+      _Object: 3
+      _Value: 0.028318336
       _Operator: 2
       _Extent: 3
     _Image_Ref: targeted
@@ -12064,7 +12256,7 @@ MonoBehaviour:
     _N2O: 
     _Image: 
     _Budget: 
-    _Effect_IDs: a90f0000ad0f0000ae0f0000af0f0000b00f0000b10f0000b20f0000
+    _Effect_IDs: a90f0000
     _Effects:
     - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
       sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
@@ -12076,85 +12268,7 @@ MonoBehaviour:
       _Game_Object: NH3_Agr_N2000
       _ObjectID: 0
       _Object: 5
-      _Value: 0.3
-      _Operator: 2
-      _Extent: 3
-    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
-      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
-      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
-      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
-      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 4013
-      _Property: ProductVolume
-      _Game_Object: Pig Farming
-      _ObjectID: 28
-      _Object: 3
-      _Value: 0.1
-      _Operator: 2
-      _Extent: 3
-    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
-      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
-      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
-      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
-      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 4014
-      _Property: ProductVolume
-      _Game_Object: Pig Farming
-      _ObjectID: 29
-      _Object: 3
-      _Value: 0.1
-      _Operator: 2
-      _Extent: 3
-    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
-      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
-      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
-      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
-      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 4015
-      _Property: ProductVolume
-      _Game_Object: Pig Farming
-      _ObjectID: 30
-      _Object: 3
-      _Value: 0.1
-      _Operator: 2
-      _Extent: 3
-    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
-      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
-      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
-      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
-      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 4016
-      _Property: ProductVolume
-      _Game_Object: Pig Farming
-      _ObjectID: 31
-      _Object: 3
-      _Value: 0.1
-      _Operator: 2
-      _Extent: 3
-    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
-      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
-      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
-      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
-      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 4017
-      _Property: ProductVolume
-      _Game_Object: Pig Farming
-      _ObjectID: 32
-      _Object: 3
-      _Value: 0.1
-      _Operator: 2
-      _Extent: 3
-    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
-      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
-      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
-      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
-      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 4018
-      _Property: Budget
-      _Game_Object: Government
-      _ObjectID: 3
-      _Object: 1
-      _Value: -1500
+      _Value: -0.04696889
       _Operator: 1
       _Extent: 2
     _Image_Ref: 
@@ -12217,13 +12331,13 @@ MonoBehaviour:
     _Importance: 1
     _Description: Increase the budget for the existing buyout of pigmeat farmers
     _Repetivity: ExecOnce
-    _Cost: 5000
+    _Cost: 2270
     _NH3: ---
     _Nox: 
     _N2O: 
     _Image: --
     _Budget: 
-    _Effect_IDs: 04050000ac0f0000
+    _Effect_IDs: 04050000c10f0000c20f0000
     _Effects:
     - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
       sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
@@ -12243,246 +12357,29 @@ MonoBehaviour:
       activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
       actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
       depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 4012
+      _ID: 4033
       _Property: ProductVolume
-      _Game_Object: Pig Farming
-      _ObjectID: 32
+      _Game_Object: Government
+      _ObjectID: 30
       _Object: 3
-      _Value: 0.1
+      _Value: 0.03856985
+      _Operator: 2
+      _Extent: 3
+    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
+      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
+      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
+      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
+      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
+      _ID: 4034
+      _Property: ProductVolume
+      _Game_Object: Government
+      _ObjectID: 31
+      _Object: 3
+      _Value: 0.03856985
       _Operator: 2
       _Extent: 3
     _Image_Ref: pigs
     _Image_Sprite: {fileID: 21300000, guid: 422834451ea8f5a408638b0888c02750, type: 3}
-  - _Cooldown: 3
-    _ExecutedTurn: 0
-    _Action_ID: 255
-    _Name: Targeted Buyouts
-    _Belonging_Sector_ID: 4
-    _Belonging_Sector: {fileID: 11400000, guid: 3e453c05d0a7e7044b90778ed6b76220, type: 2}
-    _Priority: 2028
-    _Importance: 1
-    _Description: The Dutch Court in The Hague granted Greenpeace NL victory in their
-      lawsuit against the Dutch government and mandated that the government takes
-      immediate action to tackle the nitrogen crisis. The government had to comply
-      by buying out the biggest pollutors in the vicinity of Natura 2000 areas. This
-      will greatly reduce the government's budget for this turn. 2 turns remaining.
-    _Repetivity: ExecOnce
-    _Cost: 0
-    _NH3: 
-    _Nox: 
-    _N2O: 
-    _Image: 
-    _Budget: 
-    _Effect_IDs: a90f0000ad0f0000ae0f0000af0f0000b00f0000b10f0000b20f0000
-    _Effects:
-    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
-      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
-      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
-      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
-      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 4009
-      _Property: NH3_Agr_N2000
-      _Game_Object: NH3_Agr_N2000
-      _ObjectID: 0
-      _Object: 5
-      _Value: 0.3
-      _Operator: 2
-      _Extent: 3
-    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
-      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
-      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
-      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
-      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 4013
-      _Property: ProductVolume
-      _Game_Object: Pig Farming
-      _ObjectID: 28
-      _Object: 3
-      _Value: 0.1
-      _Operator: 2
-      _Extent: 3
-    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
-      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
-      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
-      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
-      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 4014
-      _Property: ProductVolume
-      _Game_Object: Pig Farming
-      _ObjectID: 29
-      _Object: 3
-      _Value: 0.1
-      _Operator: 2
-      _Extent: 3
-    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
-      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
-      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
-      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
-      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 4015
-      _Property: ProductVolume
-      _Game_Object: Pig Farming
-      _ObjectID: 30
-      _Object: 3
-      _Value: 0.1
-      _Operator: 2
-      _Extent: 3
-    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
-      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
-      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
-      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
-      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 4016
-      _Property: ProductVolume
-      _Game_Object: Pig Farming
-      _ObjectID: 31
-      _Object: 3
-      _Value: 0.1
-      _Operator: 2
-      _Extent: 3
-    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
-      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
-      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
-      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
-      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 4017
-      _Property: ProductVolume
-      _Game_Object: Pig Farming
-      _ObjectID: 32
-      _Object: 3
-      _Value: 0.1
-      _Operator: 2
-      _Extent: 3
-    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
-      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
-      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
-      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
-      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 4018
-      _Property: Budget
-      _Game_Object: Government
-      _ObjectID: 3
-      _Object: 1
-      _Value: -1500
-      _Operator: 1
-      _Extent: 2
-    _Image_Ref: 
-    _Image_Sprite: {fileID: 0}
-  - _Cooldown: 3
-    _ExecutedTurn: 0
-    _Action_ID: 256
-    _Name: Targeted Buyouts
-    _Belonging_Sector_ID: 4
-    _Belonging_Sector: {fileID: 11400000, guid: 3e453c05d0a7e7044b90778ed6b76220, type: 2}
-    _Priority: 2029
-    _Importance: 1
-    _Description: The Dutch Court in The Hague granted Greenpeace NL victory in their
-      lawsuit against the Dutch government and mandated that the government takes
-      immediate action to tackle the nitrogen crisis. The government had to comply
-      by buying out the biggest pollutors in the vicinity of Natura 2000 areas. This
-      will greatly reduce the government's budget for this turn. 1 turn remaining.
-    _Repetivity: ExecOnce
-    _Cost: 0
-    _NH3: 
-    _Nox: 
-    _N2O: 
-    _Image: 
-    _Budget: 
-    _Effect_IDs: a90f0000ad0f0000ae0f0000af0f0000b00f0000b10f0000b20f0000
-    _Effects:
-    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
-      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
-      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
-      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
-      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 4009
-      _Property: NH3_Agr_N2000
-      _Game_Object: NH3_Agr_N2000
-      _ObjectID: 0
-      _Object: 5
-      _Value: 0.3
-      _Operator: 2
-      _Extent: 3
-    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
-      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
-      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
-      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
-      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 4013
-      _Property: ProductVolume
-      _Game_Object: Pig Farming
-      _ObjectID: 28
-      _Object: 3
-      _Value: 0.1
-      _Operator: 2
-      _Extent: 3
-    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
-      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
-      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
-      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
-      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 4014
-      _Property: ProductVolume
-      _Game_Object: Pig Farming
-      _ObjectID: 29
-      _Object: 3
-      _Value: 0.1
-      _Operator: 2
-      _Extent: 3
-    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
-      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
-      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
-      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
-      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 4015
-      _Property: ProductVolume
-      _Game_Object: Pig Farming
-      _ObjectID: 30
-      _Object: 3
-      _Value: 0.1
-      _Operator: 2
-      _Extent: 3
-    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
-      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
-      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
-      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
-      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 4016
-      _Property: ProductVolume
-      _Game_Object: Pig Farming
-      _ObjectID: 31
-      _Object: 3
-      _Value: 0.1
-      _Operator: 2
-      _Extent: 3
-    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
-      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
-      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
-      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
-      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 4017
-      _Property: ProductVolume
-      _Game_Object: Pig Farming
-      _ObjectID: 32
-      _Object: 3
-      _Value: 0.1
-      _Operator: 2
-      _Extent: 3
-    - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}
-      sectorList: {fileID: 11400000, guid: 5a48df0943f0b714d88e8f8aec2e946c, type: 2}
-      activityData: {fileID: 11400000, guid: e94e017ef7412b141adadd7e595a8034, type: 2}
-      actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
-      depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
-      _ID: 4018
-      _Property: Budget
-      _Game_Object: Government
-      _ObjectID: 3
-      _Object: 1
-      _Value: -1500
-      _Operator: 1
-      _Extent: 2
-    _Image_Ref: 
-    _Image_Sprite: {fileID: 0}
   - _Cooldown: 3
     _ExecutedTurn: 0
     _Action_ID: 257

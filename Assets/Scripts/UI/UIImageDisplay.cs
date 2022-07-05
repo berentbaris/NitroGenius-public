@@ -18,29 +18,24 @@ public class UIImageDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 
     private void Awake()
     {
-        Role_selection_script.StartGame += OnRoleSelect;
+        TurnController.DisplayActionSelectionScreen += Display_Image;
     }
 
     private void OnDestroy()
     {
-        Role_selection_script.StartGame -= OnRoleSelect;
+        TurnController.DisplayActionSelectionScreen -= Display_Image;
     }
 
-    private void OnRoleSelect(Sector sector)
+    public void Display_Image(Sector sector)
     {
+        gameObject.SetActive(true);
         SelectedSector = sector;
         if (sector == societySector)
         {
             gameObject.SetActive(false);
+            return;
         }
-        else
-        {
-            Display_Image();
-        }
-    }
 
-    public void Display_Image()
-    {
         if (SelectedSector.Image > 9.49f && SelectedSector.Image < 10.5f)
         {
             image_icon.sprite = image3;

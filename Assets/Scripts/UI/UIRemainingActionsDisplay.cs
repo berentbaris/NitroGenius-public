@@ -12,14 +12,31 @@ public class UIRemainingActionsDisplay : MonoBehaviour, IPointerEnterHandler, IP
 
     private void Awake()
     {
+        TurnController.DisplayActionSelectionScreen += RefreshDisplay;
         UIChoice.ChoiceSelected += RefreshDisplay;
         UIChoice.ChoiceUnselected += RefreshDisplay;
     }
 
     private void OnDestroy()
     {
+        TurnController.DisplayActionSelectionScreen -= RefreshDisplay;
         UIChoice.ChoiceSelected -= RefreshDisplay;
         UIChoice.ChoiceUnselected -= RefreshDisplay;
+    }
+
+    private void RefreshDisplay(Sector sector)
+    {
+        for (int i = 0; i < circleImages.Count; i++)
+        {
+            if (i < sector.Action_Limit_Per_Turn)
+            {
+                circleImages[i].sprite = circleSprite;
+            }
+            else
+            {
+                circleImages[i].sprite = checkSprite;
+            }
+        }
     }
 
     private void RefreshDisplay(Action action)

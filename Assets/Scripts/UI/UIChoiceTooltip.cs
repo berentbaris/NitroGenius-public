@@ -14,12 +14,15 @@ public class UIChoiceTooltip : MonoBehaviour
     private RectTransform thisRect;
     private Sequence hideSequence;
     private bool EaseInHappening = false;
+    private float originalX;
+    public float ExtendedX;
 
     private void Awake()
     {
         UIChoice.ChoiceHovered += DisplayTooltip;
         UIChoice.ChoiceUnHovered += OnChoiceUnHovered;
         thisRect = GetComponent<RectTransform>();
+        originalX = thisRect.anchoredPosition.x;
     }
 
     private void OnDestroy()
@@ -33,7 +36,7 @@ public class UIChoiceTooltip : MonoBehaviour
         if (EaseInHappening == false)
         {
             EaseInHappening = true;
-            thisRect.DOAnchorPosX(83f, 0.3f).SetEase(Ease.OutBack).OnComplete(OnEaseInComplete);
+            thisRect.DOAnchorPosX(ExtendedX, 0.3f).SetEase(Ease.OutBack).OnComplete(OnEaseInComplete);
         }
         hideSequence.Kill();
         hideSequence = null;
@@ -86,10 +89,10 @@ public class UIChoiceTooltip : MonoBehaviour
 
     public void ClearTooltip()
     {
-        if (thisRect.anchoredPosition.x != -210.39f && hideSequence == null)
+        if (thisRect.anchoredPosition.x != originalX && hideSequence == null)
         {
             hideSequence = DOTween.Sequence();
-            hideSequence.Append(thisRect.DOAnchorPosX(-210.39f, 0.3f).SetEase(Ease.OutBack).SetDelay(0.5f));
+            hideSequence.Append(thisRect.DOAnchorPosX(originalX, 0.3f).SetEase(Ease.OutBack).SetDelay(0.5f));
         }
     }
 }

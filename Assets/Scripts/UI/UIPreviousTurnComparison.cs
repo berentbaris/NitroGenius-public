@@ -15,22 +15,17 @@ public class UIPreviousTurnComparison : MonoBehaviour
 
     private void Awake()
     {
-        Role_selection_script.StartGame += OnGameStart;
+        TurnController.DisplayActionSelectionScreen += CalculatePreviousTurnComparison;
     }
 
     private void OnDestroy()
     {
-        Role_selection_script.StartGame -= OnGameStart;
+        TurnController.DisplayActionSelectionScreen -= CalculatePreviousTurnComparison;
     }
 
-    private void OnGameStart(Sector sector)
+    public void CalculatePreviousTurnComparison(Sector sector)
     {
         selectedSector = sector;
-        CalculatePreviousTurnComparison();
-    }
-
-    public void CalculatePreviousTurnComparison()
-    {
         CalculateN2O();
         CalculateNH3();
         CalculateNox();
@@ -63,7 +58,7 @@ public class UIPreviousTurnComparison : MonoBehaviour
     {
         if(selectedSector.NH3_Emissions == 0)
         {
-            NH3Comparison.text = "Your NH3 emissions: 0%";
+            NH3Comparison.text = "Your NH3 emissions: 0";
             return;
         }
 
@@ -86,7 +81,7 @@ public class UIPreviousTurnComparison : MonoBehaviour
     {
         if (selectedSector.Nox_Emissions == 0)
         {
-            NoxComparison.text = "Your NOx emissions: 0%";
+            NoxComparison.text = "Your NOx emissions: 0";
             return;
         }
 

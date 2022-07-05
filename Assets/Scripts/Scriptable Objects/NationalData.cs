@@ -15,7 +15,6 @@ public partial class NationalData : ScriptableObject {
 	public DepositionData DepositionData;
 	public IntVariable Turn;
 	public ActionData actionData;
-    public Sector selectedSector;
 
 	public void ClearRecords()
 	{
@@ -102,6 +101,10 @@ public partial class NationalData : ScriptableObject {
 		_NationalItem._Environment_Factor = 0;
 		_NationalItem._Economic_Factor = (((_NationalItem._GDP_Per_Capita * _NationalItem._Unemployment) - 1867620) / (7867620 - 1867620)) * (30 - 0) + 0; 
 		_NationalItem._Health_Factor = (((0 - _NationalItem._Mean_Nox_Deposition) / (3000 - 0)) * (15 - 0) + 15) + (((0 - _NationalItem._Mean_NH3_Deposition) / (3000 - 0)) * (10 - 0) + 10) + (((0 - _NationalItem._Mean_N2000_NH3_Deposition) / (3600 - 0)) * (5 - 0) + 5) + ((((_NationalItem._GDP_Per_Capita * _NationalItem._Unemployment) - 1867620) / (7867620 - 1867620)) * (5 - 0) + 0) + (((5000 - _NationalItem._National_N2O_Emissions) / (65889 - 5000)) * (5 - 0) + 5);
+		foreach (Sector sector in sectorList.list)
+		{
+			sector.public_health = _NationalItem._Health_Factor;
+		}
 		_NationalItem._Environment_Factor = (((0 - _NationalItem._Mean_Nox_Deposition) / (3000 - 0)) * (10 - 0) + 10) + (((0 - _NationalItem._Mean_N2000_NH3_Deposition) / (3600 - 0)) * (10 - 0) + 10) + (((5000 - _NationalItem._National_N2O_Emissions) / (65889 - 5000)) * (10 - 0) + 10);
 		_NationalItem._Happiness = _NationalItem._Economic_Factor + _NationalItem._Health_Factor + _NationalItem._Environment_Factor;
 		foreach (Sector sector in sectorList.list)
@@ -142,20 +145,23 @@ public partial class NationalData : ScriptableObject {
 		_NationalItem._Happiness = _NationalItem._Happiness + _NationalItem._Happiness_Adjuster;
 	}
 
-	public void CalculateScore()
+	public void CalculateSectorScore()
 	{
-		if (selectedSector != sectorList.list[3] && selectedSector != sectorList.list[2])
+		foreach (Sector sector in sectorList.list)
         {
-	        _NationalItem._Score = (((_NationalItem._N2000_Below_Critical - 25) / (75 - 25)) * (40 - 0) + 0) + (((_NationalItem._Happiness - 0) / (100 - 0)) * (20 - 0) + 0) + (((_NationalItem._Economic_Factor - 0) / (30 - 0)) * (20 - 0) + 0) + ((((((selectedSector.Product_Volume_Total - selectedSector.ProductVolumeTotalRecord[0]) / selectedSector.ProductVolumeTotalRecord[0]) * 100) + 100) / (100 + 100)) * (10 - 0) + 0) + (((selectedSector.Image - 8) / (12 - 8)) * (10 - 0) + 0);
-        }
-        if (selectedSector == sectorList.list[3])
-        {
-	        _NationalItem._Score = (((_NationalItem._N2000_Below_Critical - 25) / (75 - 25)) * (40 - 0) + 0) + (((_NationalItem._Happiness - 0) / (100 - 0)) * (20 - 0) + 0) + (((_NationalItem._Economic_Factor - 0) / (30 - 0)) * (20 - 0) + 0) + (((selectedSector.Image - 8) / (12 - 8)) * (20 - 0) + 0);
-        }
-        if (selectedSector == sectorList.list[2])
-        {		    
-            _NationalItem._Score = (((_NationalItem._N2000_Below_Critical - 25) / (75 - 25)) * (40 - 0) + 0) + (((_NationalItem._Happiness - 0) / (100 - 0)) * (30 - 0) + 0) + (((_NationalItem._Economic_Factor - 0) / (30 - 0)) * (30 - 0) + 0);
-        }
+			if (sector != sectorList.list[3] && sector != sectorList.list[2])
+			{
+				sector.score = (((_NationalItem._N2000_Below_Critical - 25) / (75 - 25)) * (40 - 0) + 0) + (((_NationalItem._Happiness - 0) / (100 - 0)) * (20 - 0) + 0) + (((_NationalItem._Economic_Factor - 0) / (30 - 0)) * (20 - 0) + 0) + ((((((sector.Product_Volume_Total - sector.ProductVolumeTotalRecord[0]) / sector.ProductVolumeTotalRecord[0]) * 100) + 100) / (100 + 100)) * (10 - 0) + 0) + (((sector.Image - 8) / (12 - 8)) * (10 - 0) + 0);
+			}
+			if (sector == sectorList.list[3])
+			{
+				sector.score = (((_NationalItem._N2000_Below_Critical - 25) / (75 - 25)) * (40 - 0) + 0) + (((_NationalItem._Happiness - 0) / (100 - 0)) * (20 - 0) + 0) + (((_NationalItem._Economic_Factor - 0) / (30 - 0)) * (20 - 0) + 0) + (((sector.Image - 8) / (12 - 8)) * (20 - 0) + 0);
+			}
+			if (sector == sectorList.list[2])
+			{
+				sector.score = (((_NationalItem._N2000_Below_Critical - 25) / (75 - 25)) * (40 - 0) + 0) + (((_NationalItem._Happiness - 0) / (100 - 0)) * (30 - 0) + 0) + (((_NationalItem._Economic_Factor - 0) / (30 - 0)) * (30 - 0) + 0);
+			}
+		}
 	}	
 
 	[NonSerialized]
@@ -240,7 +246,4 @@ public class National {
 
 	[SerializeField]
 	public float _N2000_Below_Critical;
-
-	[SerializeField]
-	public float _Score;
 }

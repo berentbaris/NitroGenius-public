@@ -4,26 +4,45 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using ScriptableEvents.Events;
 
 public class Role_selection_script : MonoBehaviour
 {
-    public static event Action<Sector> StartGame;
+    public SimpleScriptableEvent StartGameEvent;
     public Sector selected_sector;
     public Button Start_Game;
     public TextMeshProUGUI Name_text;
     public TextMeshProUGUI Description_text;
     public TextMeshProUGUI Concerns_text;
     public TextMeshProUGUI Concerns_Title_text;
-    public NationalData natData;
+    public Event gamestart;
+    public IntVariable currentGameMode;
+    private CanvasGroup RoleSelectioncanGroup;
 
     private void Awake()
     {
+        RoleSelectioncanGroup = GetComponent<CanvasGroup>();
         UIRoleSelectorButton.SelectionChange += Selection_change;
     }
 
     private void OnDestroy()
     {
         UIRoleSelectorButton.SelectionChange -= Selection_change;
+    }
+
+    public void ActivateRoleSelectionScreen()
+    {
+        if (currentGameMode.Value == 0)
+        {
+            RoleSelectioncanGroup.alpha = 1;
+            RoleSelectioncanGroup.interactable = true;
+            RoleSelectioncanGroup.blocksRaycasts = true;
+        }
+        else
+        {
+            StartGameEvent.Raise();
+            gameObject.SetActive(false);
+        }
     }
 
     public void Selection_change(Sector selection)
@@ -47,7 +66,6 @@ public class Role_selection_script : MonoBehaviour
 
     public void OnStartGameButtonPress()
     {
-        StartGame(selected_sector);
-        natData.selectedSector = selected_sector;
+        StartGameEvent.Raise();
     }
 }

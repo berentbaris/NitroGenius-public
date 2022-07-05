@@ -9,42 +9,41 @@ public class UIChoiceList : MonoBehaviour
     public Transform parentTransform;
     public GameObject cellPrefab;
     private List<GameObject> choiceCells = new List<GameObject>();
-    private Sector chosenSector;
     public IntVariable currentYear;
+    public bool fullList = false;
 
     private void Awake()
     {
-        Role_selection_script.StartGame += OnStartGame;
+        TurnController.DisplayActionSelectionScreen += PopulateList;
     }
 
     private void OnDestroy()
     {
-        Role_selection_script.StartGame -= OnStartGame;
+        TurnController.DisplayActionSelectionScreen -= PopulateList;
     }
 
-    private void OnStartGame(Sector sector)
-    {
-        chosenSector = sector;
-        ClearList();
-        PopulateList();
-    }
-
-    public void OnStartTurn()
+    public void PopulateList(Sector sector)
     {
         ClearList();
-        PopulateList();
-    }
-
-    private void PopulateList()
-    {
-        foreach (Action action in chosenSector.Actions)
+        foreach (Action action in sector.Actions)
         {
-            if (action._Priority <= currentYear.Value)
+            if (fullList == true)
             {
                 GameObject obj = Instantiate(cellPrefab);
                 choiceCells.Add(obj);
                 obj.transform.SetParent(parentTransform, false);
-                obj.GetComponent<UIChoice>().SetChoice(action);
+                UIChoice choice = obj.GetComponent<UIChoice>();
+                choice.FullListChoice = true;
+                choice.SetChoice(action);
+            }
+            else if (action._Priority <= currentYear.Value)
+            {
+                GameObject obj = Instantiate(cellPrefab);
+                choiceCells.Add(obj);
+                obj.transform.SetParent(parentTransform, false);
+                UIChoice choice = obj.GetComponent<UIChoice>();
+                choice.FullListChoice = false;
+                choice.SetChoice(action);
             }
         }
     }

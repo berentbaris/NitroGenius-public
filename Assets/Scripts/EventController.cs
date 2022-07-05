@@ -9,26 +9,16 @@ public class EventController : MonoBehaviour
     public IntVariable currentYear;
     public NationalData natData;
     public ActionData ActionData;
-    private Sector selectedSector;
     public SectorList sectorList;
-
-    private void Awake()
-    {
-        Role_selection_script.StartGame += GetSelectedSector;
-    }
-
-    private void OnDestroy()
-    {
-        Role_selection_script.StartGame -= GetSelectedSector;
-    }
-
-    public void GetSelectedSector(Sector sector)
-    {
-        selectedSector = sector;
-    }
+    public BoolVariable EventsEnabledBool;
 
     public void checkeventEvent()
     {
+        if (EventsEnabledBool.Value == false)
+        {
+            return;
+        }
+
         if (currentYear.Value == 2024)
         {
             Action lawsuit_action = ActionData.GetAction(238);
@@ -131,26 +121,11 @@ public class EventController : MonoBehaviour
                 eventSector.SelectedChoices.Add(foreign_deposition_action);
             }
         }
-        //last push
-        if (currentYear.Value == 2033)
-        {
-            if (selectedSector != sectorList.list[3])
-            {
-                if (natData._NationalItem._N2000_Below_Critical < 70)
-                {
-                    Action last_push = ActionData.GetAction(244);
-                    if (governmentSector.Actions.Contains(last_push))
-                    {
-                        governmentSector.SelectedChoices.Add(last_push);
-                    }
-                }
-            }
-        }
+
         //2034 protests
         if (currentYear.Value == 2034)
         {
             Action targeted_buyouts_2 = ActionData.GetAction(252);
-            Action last_push = ActionData.GetAction(244);
             if (!eventSector.Actions.Contains(targeted_buyouts_2))
             {
                     Action protests2034 = ActionData.GetAction(257);
@@ -159,6 +134,15 @@ public class EventController : MonoBehaviour
                         eventSector.SelectedChoices.Add(protests2034);
                     }
             }
-        } 
+        }
+
+        foreach (Action chosenAction in eventSector.SelectedChoices)
+        {
+            foreach (Effect effect in chosenAction._Effects)
+            {
+                effect.ApplyEffect();
+                effect.ApplyEffectAfter();
+            }
+        }
     }
 }

@@ -16,17 +16,6 @@ public class UI_Timer : MonoBehaviour
     private void Awake()
     {
         fillImageWidth = timerFillImage.rectTransform.sizeDelta.x;
-        Role_selection_script.StartGame += OnStartGame;
-    }
-
-    private void OnDestroy()
-    {
-        Role_selection_script.StartGame -= OnStartGame;
-    }
-
-    private void OnStartGame(Sector sector)
-    {
-        timerCoroutine = StartCoroutine(TimeDisplay());
     }
 
     public void OnNewTurn()

@@ -14,20 +14,15 @@ public class UICriticalLoadDisplay : MonoBehaviour
     private void Awake()
     {
         fillImageWidth = barFillImage.rectTransform.sizeDelta.x;
-        Role_selection_script.StartGame += OnGameStart;
+        TurnController.DisplayActionSelectionScreen += DisplayPercentage;
     }
 
     private void OnDestroy()
     {
-        Role_selection_script.StartGame -= OnGameStart;
+        TurnController.DisplayActionSelectionScreen -= DisplayPercentage;
     }
 
-    private void OnGameStart(Sector sector)
-    {
-        DisplayPercentage();
-    }
-
-    public void DisplayPercentage()
+    public void DisplayPercentage(Sector sector)
     {
         percentageDisplay.text = Mathf.RoundToInt(natData._NationalItem._N2000_Below_Critical).ToString() + "%";
 

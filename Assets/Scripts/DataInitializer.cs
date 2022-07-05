@@ -25,15 +25,20 @@ public class DataInitializer : MonoBehaviour
     public IntVariable turn;
     public IntVariable currentYear;
 
-    public BoolVariable skipTutorialBool;
+    public BoolVariable TutoriaEnabledBool;
+    public BoolVariable AiEnabledBool;
+    public BoolVariable EventsEnabledBool;
 
     public void Start()
     {
-        skipTutorialBool.SetValue(false);
+        TutoriaEnabledBool.SetValue(true);
+        AiEnabledBool.SetValue(true);
+        EventsEnabledBool.SetValue(true);
 
         // sector data initialize
         foreach (Sector sector in sectorList.list)
         {
+            sector.controllerAgent = Controller.None;
             sector.Display_Budget = 0;
             sector.Budget = 0;
             sector.Image = 10;
@@ -41,6 +46,7 @@ public class DataInitializer : MonoBehaviour
             sector.NH3_Emissions = 0;
             sector.Nox_Emissions = 0;
             sector.Product_Volume_Total = 0;
+            sector.score = 28;
         }
         // source data intialize
         foreach (Source source in sourceList.list)
@@ -80,7 +86,6 @@ public class DataInitializer : MonoBehaviour
         natDataGame._NationalItem._N_Exports = natDataInitial._NationalItem._N_Exports;
         natDataGame._NationalItem._N2000_Below_Critical = 0;
         natDataGame._NationalItem._Happiness_Adjuster = 0;
-        natDataGame._NationalItem._Score = 28;
         natDataGame._NationalItem._Economic_Factor = 15;
 
         // action data initialize

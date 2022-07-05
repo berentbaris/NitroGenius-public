@@ -8,28 +8,27 @@ public class UIRoleDisplay : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 {
     public Image background;
     public Image icon;
-    private Sector selectedSector;
-
+    private Sector currentSector;
     private void Awake()
     {
-        Role_selection_script.StartGame += ChangeRoleDisplay;
+        TurnController.DisplayActionSelectionScreen += ChangeRoleDisplay;
     }
 
     private void OnDestroy()
     {
-        Role_selection_script.StartGame -= ChangeRoleDisplay;
+        TurnController.DisplayActionSelectionScreen -= ChangeRoleDisplay;
     }
 
-    public void ChangeRoleDisplay(Sector sector)
+    private void ChangeRoleDisplay(Sector sector)
     {
         background.color = sector.color.Value;
         icon.sprite = sector.Icon;
-        selectedSector = sector;
+        currentSector = sector;
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        TooltipSystem.Show(selectedSector.Concerns, selectedSector.name);
+        TooltipSystem.Show(currentSector.Concerns, currentSector.name);
     }
 
     public void OnPointerExit(PointerEventData eventData)

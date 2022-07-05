@@ -85,10 +85,32 @@ public partial class ActivityData : ScriptableObject {
 				sectorList.list[1].Nox_Emissions = sectorList.list[1].Nox_Emissions + item._Nox_Emissions;
 				if (item._Raw_Mats_Type_ID == 3)
 				{
-					sectorList.list[1].Fertilizer_Input += item._Product_Volume * item._Raw_Mats_Per_Unit;
+					if (item._ID != 33)
+					{
+						sectorList.list[1].Fertilizer_Input += item._Product_Volume * item._Raw_Mats_Per_Unit;
+						if (item._ID == 34)
+						{
+							sectorList.list[1].Fertilizer_Output += item._Product_Volume * (0.41f * 0.01f);
+						}
+						else if (item._ID == 35)
+						{
+							sectorList.list[1].Fertilizer_Output += item._Product_Volume * (0.26f * 0.01f);
+						}
+						else if (item._ID == 36)
+						{
+							sectorList.list[1].Fertilizer_Output += item._Product_Volume * (2.41f * 0.01f);
+						}
+						else if (item._ID == 37)
+						{
+							sectorList.list[1].Fertilizer_Output += item._Product_Volume * (0.52f * 0.01f);
+						}
+						else if (item._ID == 28)
+						{
+							sectorList.list[1].Fertilizer_Output += item._Product_Volume * (0.51f * 0.01f);
+						}
+					}
 				}
-				sectorList.list[1].Fertilizer_NH3_Total += item._Fertilizer_NH3;
-				sectorList.list[1].NUE = sectorList.list[1].Fertilizer_Input / sectorList.list[1].Fertilizer_NH3_Total;
+				sectorList.list[1].NUE = sectorList.list[1].Fertilizer_Output / sectorList.list[1].Fertilizer_Input;
 			}
 			//Society Emissions
 			if (item._Belonging_Sector_ID == 2)
@@ -197,7 +219,6 @@ public class Activity {
 
 		//NH3 Emissions
 		_NH3_Emissions = (_Produced_Product._Emission_NH3 * _Product_Volume);
-		_Fertilizer_NH3 = 0;
 		if (_Fuel_Type != null)
 		{
 			_NH3_Emissions += (_Fuel_Type._Emission_NH3 * _Fuel_Per_Unit * _Product_Volume);
@@ -212,7 +233,6 @@ public class Activity {
 		}
 		if (_Raw_Mats_Type_ID == 3)
 		{
-			_Fertilizer_NH3 += (_Raw_Mats_Type._Emission_NH3 * _Raw_Mats_Per_Unit * _Product_Volume);
 		}
 		if (_Other_Mats_Type != null)
 		{
@@ -459,7 +479,7 @@ public class Activity {
 	public float _NH3_Emissions;
 
 	[SerializeField]
-	public float _Fertilizer_NH3;
+	public float _Fertilizer_Total;
 
 	[SerializeField]
 	public float _Nox_Emissions;

@@ -13,22 +13,7 @@ public class UIMapDisplay : MonoBehaviour
     public ColorVariable N2000Below;
     public ColorVariable N2000Above;
 
-    private void Awake()
-    {
-        Role_selection_script.StartGame += OnGameStart;
-    }
-
-    private void OnDestroy()
-    {
-        Role_selection_script.StartGame -= OnGameStart;
-    }
-
-    private void OnGameStart(Sector sector)
-    {
-        CreateMapDisplay();
-    }
-
-    private void CreateMapDisplay()
+    public void CreateMapDisplay()
     {
         foreach (Deposition deposition in depDataGame._DepositionItems)
         {

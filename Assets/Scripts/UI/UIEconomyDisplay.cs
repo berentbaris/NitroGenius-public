@@ -10,23 +10,17 @@ public class UIEconomyDisplay : MonoBehaviour
     public SectorList sectorList;
     private Sector selectedSector;
 
-
     private void Awake()
     {
-        Role_selection_script.StartGame += OnStartGame;
+        TurnController.DisplayActionSelectionScreen += Display_Economy;
     }
 
     private void OnDestroy()
     {
-        Role_selection_script.StartGame -= OnStartGame;
+        TurnController.DisplayActionSelectionScreen -= Display_Economy;
     }
 
-    private void OnStartGame(Sector sector)
-    {
-        Display_Economy();
-    }
-
-    public void Display_Economy()
+    private void Display_Economy(Sector sector)
     {
         economyText.gameObject.SetActive(true);
         float percentage = natData._NationalItem._Economic_Factor * 3.33333333333f;

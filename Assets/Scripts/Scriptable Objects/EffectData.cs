@@ -378,11 +378,11 @@ public class Effect
 		{
 			if (_Extent == EffectData.extentType.Supplement)
 			{
-				variable = variable * (1.15f + _Value);
+				variable = variable * (1.1f + _Value);
 			}
 			if (_Extent == EffectData.extentType.Complement)
 			{
-				variable = variable * (0.85f - _Value);
+				variable = variable * (0.9f - _Value);
 			}
 			if (_Extent == EffectData.extentType.Ignore)
 			{
@@ -390,11 +390,11 @@ public class Effect
 				{
 					if (_Value > 1)
 					{
-						variable = variable * (1.15f * _Value);
+						variable = variable * (1.1f * _Value);
 					}
 					if (_Value < 1)
 					{
-						variable = variable * (_Value * 0.85f);
+						variable = variable * (_Value * 0.9f);
 					}
 				}
 				if (_Operator == EffectData.operatorType.Equals)
@@ -431,11 +431,11 @@ public class Effect
 
 			if (_Extent == EffectData.extentType.Supplement)
 			{
-				variable = variable * (1 + _Value);
+				variable = variable * (1.1f + _Value);
 			}
 			if (_Extent == EffectData.extentType.Complement)
 			{
-				variable = variable * (1 - _Value);
+				variable = variable * (0.9f - _Value);
 			}
 			if (_Extent == EffectData.extentType.Ignore)
 			{
@@ -483,14 +483,24 @@ public class Effect
 		{
 			if (_Extent == EffectData.extentType.Supplement)
 			{
-				foreach (KeyValuePair<Vector2Int, Deposition> item in depositionData.MapDicN2000Vicinity)
+				foreach (KeyValuePair<Vector2Int, Deposition> item in depositionData.MapDicN2000)
 				{
 					item.Value._NH3Agr = item.Value._NH3Agr * (1 + _Value);
 				}
 			}
+			if (_Extent == EffectData.extentType.Ignore)
+			{
+				if (_Operator == EffectData.operatorType.Plus)
+				{
+					foreach (KeyValuePair<Vector2Int, Deposition> item in depositionData.MapDicN2000)
+					{
+						item.Value._NH3Agr = item.Value._NH3Agr + _Value;
+					}
+				}
+			}
 			if (_Extent == EffectData.extentType.Complement)
 			{
-				foreach (KeyValuePair<Vector2Int, Deposition> item in depositionData.MapDicN2000Vicinity)
+				foreach (KeyValuePair<Vector2Int, Deposition> item in depositionData.MapDicN2000)
 				{
 					item.Value._NH3Agr = item.Value._NH3Agr * (1 - _Value);
 				}

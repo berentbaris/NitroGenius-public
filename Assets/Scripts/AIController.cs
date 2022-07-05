@@ -7,41 +7,41 @@ public class AIController : MonoBehaviour
     public SectorList sectorList;
     public AIData aiData;
     public ActionData actionData;
+    public NationalData natdata;
     public IntVariable currentYear;
-    private Sector playerControlledSector;
+    public BoolVariable AIEnabledBool;
     private List<Action> AiActionsThisTurn = new List<Action>();
-
-    private void Awake()
-    {
-        Role_selection_script.StartGame += OnGameStart;
-    }
-
-    private void OnDestroy()
-    {
-        Role_selection_script.StartGame -= OnGameStart;
-    }
-
-    private void OnGameStart(Sector sector)
-    {
-        playerControlledSector = sector;
-        MakeAiDecisions();
-    }
 
     public void MakeAiDecisions()
     {
         AiActionsThisTurn.Clear();
 
-        foreach (Sector sector in sectorList.list)
+        if (AIEnabledBool.Value == false)
         {
-            sector.SelectedChoices.Clear();
-            sector.Action_Limit_Per_Turn = 3;
+            return;
         }
 
         foreach (AI aiAction in aiData._AIItems)
         {
-            if (aiAction.Year == currentYear.Value && sectorList.list[aiAction.Role_ID] != playerControlledSector)
+            if (aiAction.Year == currentYear.Value && sectorList.list[aiAction.Role_ID].controllerAgent == Controller.AI)
             {
                 AiActionsThisTurn.Add(actionData.GetAction(aiAction.Action_ID));
+            }
+        }
+
+        //last push 
+        if (currentYear.Value == 2033)
+        {
+            if (sectorList.list[3].controllerAgent != Controller.Player)
+            {
+                if (natdata._NationalItem._N2000_Below_Critical < 70)
+                {
+                    Action nationalBuyouts = actionData.GetAction(246);
+                    if (sectorList.list[3].Actions.Contains(nationalBuyouts))
+                    {
+                        sectorList.list[3].SelectedChoices.Add(nationalBuyouts);
+                    }
+                }
             }
         }
 
