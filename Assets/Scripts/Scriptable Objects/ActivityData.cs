@@ -138,7 +138,7 @@ public partial class ActivityData : ScriptableObject {
 		}
 		foreach (Source source in sourceList.list)
 		{
-			source.Nox_Emissions = source.Nox_Emissions / 2;
+			source.Nox_Emissions = source.Nox_Emissions * 0.6f;
 		}
 	}
 

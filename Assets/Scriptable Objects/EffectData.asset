@@ -8851,11 +8851,11 @@ MonoBehaviour:
     actionData: {fileID: 11400000, guid: 197f80d0da9753c4499ad79b5412b66b, type: 2}
     depositionData: {fileID: 11400000, guid: aaeadbad16dfeed4eba79983d350deda, type: 2}
     _ID: 4009
-    _Property: NH3_Agr_N2000
-    _Game_Object: NH3_Agr_N2000
+    _Property: NH3_Agr_N2000_Vicinity
+    _Game_Object: NH3_Agr_N2000_Vicinity
     _ObjectID: 0
     _Object: 5
-    _Value: -0.04696889
+    _Value: -0.0643387
     _Operator: 1
     _Extent: 2
   - productData: {fileID: 11400000, guid: 3265e8db4d23d4446b04f078aa281ba8, type: 2}

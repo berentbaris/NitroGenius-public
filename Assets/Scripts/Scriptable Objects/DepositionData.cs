@@ -27,6 +27,7 @@ public partial class DepositionData : ScriptableObject
 	public void OnGameStart()
 	{
 		CreateDictionary();
+		Adjust_Emission_Coefficients();
 		LocalizeEmissions();
 		CalculateDeposition();
 	}
@@ -122,6 +123,35 @@ public partial class DepositionData : ScriptableObject
 			deposition._NH3_Deposition = deposition._NH3_Deposition / 2500;
 			deposition._Total_Deposition = (deposition._NOx_Deposition + deposition._NH3_Deposition);
 		}
+	}
+	
+	private void Adjust_Emission_Coefficients()
+	{
+		foreach (KeyValuePair<Vector2Int, Deposition> item in MapDicN2000Vicinity)
+        {
+            if (item.Value._Natura2000 == false)
+            {
+                item.Value._NH3Agr = item.Value._NH3Agr / 3;
+            }
+        }
+        foreach (KeyValuePair<Vector2Int, Deposition> item in MapDic)
+        {
+            if (item.Value._Natura2000 == false)
+            {
+                item.Value._NH3Agr += 0.00967382657f;
+            }
+        }
+        foreach (Deposition item in _DepositionItems)
+        {
+            if (item._Natura2000 == true)
+			{
+				item._NH3Agr = 0;
+			}
+			else
+			{
+				item._NH3Agr += 0.01046778042f;
+			}
+        }
 	}
 
 	[NonSerialized]

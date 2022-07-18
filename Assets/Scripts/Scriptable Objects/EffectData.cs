@@ -497,10 +497,51 @@ public class Effect
 						item.Value._NH3Agr = item.Value._NH3Agr + _Value;
 					}
 				}
+				if (_Operator == EffectData.operatorType.Equals)
+				{
+					foreach (KeyValuePair<Vector2Int, Deposition> item in depositionData.MapDicN2000)
+					{
+						item.Value._NH3Agr = _Value;
+					}
+				}
 			}
 			if (_Extent == EffectData.extentType.Complement)
 			{
 				foreach (KeyValuePair<Vector2Int, Deposition> item in depositionData.MapDicN2000)
+				{
+					item.Value._NH3Agr = item.Value._NH3Agr * (1 - _Value);
+				}
+			}
+		}
+		if (Property == "NH3_Agr_N2000_Vicinity")
+		{
+			if (_Extent == EffectData.extentType.Supplement)
+			{
+				foreach (KeyValuePair<Vector2Int, Deposition> item in depositionData.MapDicN2000Vicinity)
+				{
+					item.Value._NH3Agr = item.Value._NH3Agr * (1 + _Value);
+				}
+			}
+			if (_Extent == EffectData.extentType.Ignore)
+			{
+				if (_Operator == EffectData.operatorType.Plus)
+				{
+					foreach (KeyValuePair<Vector2Int, Deposition> item in depositionData.MapDicN2000Vicinity)
+					{
+						if (item.Value._NH3Agr < 0.064338697f)
+						{
+							item.Value._NH3Agr = 0;
+						}
+						else
+						{
+							item.Value._NH3Agr = item.Value._NH3Agr + _Value;
+						}
+					}
+				}
+			}
+			if (_Extent == EffectData.extentType.Complement)
+			{
+				foreach (KeyValuePair<Vector2Int, Deposition> item in depositionData.MapDicN2000Vicinity)
 				{
 					item.Value._NH3Agr = item.Value._NH3Agr * (1 - _Value);
 				}
